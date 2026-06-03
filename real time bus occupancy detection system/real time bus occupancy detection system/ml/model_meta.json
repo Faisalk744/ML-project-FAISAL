@@ -1,0 +1,51 @@
+{
+  "feature_columns": [
+    "Distance_km",
+    "Weather",
+    "Traffic_Level",
+    "Time_of_Day",
+    "Vehicle_Type",
+    "Preparation_Time_min",
+    "Courier_Experience_yrs"
+  ],
+  "target_column": "Delivery_Time_min",
+  "categorical_options": {
+    "Weather": [
+      "Clear",
+      "Foggy",
+      "Rainy",
+      "Snowy",
+      "Windy"
+    ],
+    "Traffic_Level": [
+      "High",
+      "Low",
+      "Medium"
+    ],
+    "Time_of_Day": [
+      "Afternoon",
+      "Evening",
+      "Morning",
+      "Night"
+    ],
+    "Vehicle_Type": [
+      "Bike",
+      "Car",
+      "Scooter"
+    ]
+  },
+  "defaults": {
+    "Weather": "Clear",
+    "Traffic_Level": "Medium",
+    "Time_of_Day": "Afternoon",
+    "Vehicle_Type": "Bike",
+    "Courier_Experience_yrs": 5.0
+  },
+  "metrics": {
+    "mae_minutes": 6.67,
+    "rmse_minutes": 9.56,
+    "r2_score": 0.7961,
+    "train_samples": 800,
+    "test_samples": 200
+  }
+}
